@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import br.com.alura.mvc.mudi.controller.model.Pedido;
+import br.com.alura.mvc.mudi.model.Pedido;
 
 @Controller
 public class HomeController {
