@@ -30,7 +30,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		.and()
 		.formLogin(form -> form
 				.loginPage("/login")
-				.defaultSuccessUrl("/home", true)
+				.defaultSuccessUrl("/usuario/pedido", true)
 				.permitAll()
 		)
 		.logout(logout -> logout.logoutUrl("/logout"))
@@ -46,17 +46,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.passwordEncoder(encoder);
 	}
 	
-//	@Bean
-//	@Override
-//	protected UserDetailsService userDetailsService() {
-//		UserDetails user = 
-//				User.withDefaultPasswordEncoder()
-//					.username("edu")
-//					.password("edu")
-//					.roles("ADM")
-//					.build();
-//		
-//		return new InMemoryUserDetailsManager(user);
-//	}
 
 }
